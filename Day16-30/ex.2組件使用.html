@@ -1,0 +1,29 @@
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	</head>
+	<body>
+		<div id="app">
+			<el-button @click="visible = true">點我</el-button>
+			<el-dialog :visible.sync="visible" title="Hello world">
+				<p>開始使用Element吧</p>
+			</el-dialog>
+            </div>
+	</body>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<script>
+		new Vue({
+			el: '#app',
+			data: {
+				visible: false,
+			}
+		})
+	</script>
+</html>
